@@ -15,8 +15,7 @@ public class App{
             int product = sc.nextInt();
             if (product == 3) {
                 System.out.println("Sorry, the selected product is currently not available. Please choose a different option.");
-                product = sc.nextInt();
-                sc.nextLine();
+                break;
             } else if (product == 2) {
                 rateOutputOcean();
             } else if (product == 1) {
@@ -66,7 +65,7 @@ public class App{
                 rate = 10000;
                 break;
             }
-            System.out.println(weight * rate);
+            System.out.printf("The price for your option is: $%.2f\n", weight * rate);
         }
 
     private static void rateOutputOcean(){
@@ -99,7 +98,7 @@ public class App{
                 rate = 1000;
                 break;
             }
-            System.out.println(volume * rate);
+            System.out.printf("The price for your option is: $%.2f\n", volume * rate);
     }
 
     private static boolean toExit() {
