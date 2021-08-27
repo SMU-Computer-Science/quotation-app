@@ -49,7 +49,7 @@ public class App{
             
             double price = weight * rate;
             System.out.println();
-            System.out.println("Price: " + price);
+            System.out.printf("Price: $%.2f\n", price);
             
             System.out.println("Do you wish to calculate again?(Y/N)");
             String s = sc.nextLine();
