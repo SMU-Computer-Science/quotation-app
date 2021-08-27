@@ -47,15 +47,13 @@ public class App{
                 break;
             }
             
-                
-
             double price = weight * rate;
             System.out.println();
             System.out.println("Price: " + price);
             
             System.out.println("Do you wish to calculate again?(Y/N)");
             String s = sc.nextLine();
-            while(!(s.equals("Y") || s.equals("Y"))) {
+            while(!(s.equals("Y") || s.equals("N"))) {
                 System.out.println("Invalid input.");
                 System.out.println("Do you wish to calculate again?(Y/N)");
                 s = sc.nextLine();
@@ -65,7 +63,7 @@ public class App{
             }
         }
 
-        System.out.println("Thank you very much! Have a nice day:)");
+        System.out.println("Thank you very much and have a nice day! :)");
         sc.close();
     }
 }
